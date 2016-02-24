@@ -40,11 +40,7 @@ pprint.pprint(artists)
 x_axis = []
 y_axis = []
 text = []
-#x_axis = [x['name'] for x in artists]
-#y_axis = [x['ref_count'] for x in artists]
-#text = [x['name'] for x in artists]
 for artist, artist_data in artists.iteritems():
-    print "********** ARTIST ****************"
     pprint.pprint(artist)
     pprint.pprint(artist_data)
     x_axis.append(artist_data['name'])
